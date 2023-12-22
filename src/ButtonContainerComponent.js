@@ -10,9 +10,8 @@ class ButtonContainerComponent extends LitElement {
     button {
       margin-right: 10px;
       padding: 8px 16px;
-      font-size: 16px;
+      font-size: 100%;
       cursor: pointer;
-      height: 100%;
     }
     
     button:first-child {
