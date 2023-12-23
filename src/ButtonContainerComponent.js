@@ -8,28 +8,27 @@ class ButtonContainerComponent extends LitElement {
     }
 
     button {
-      margin-right: 10px;
       padding: 8px 16px;
       font-size: 100%;
       cursor: pointer;
+      height: 100%;
+      border: none;
     }
     
     button:first-child {
-      margin-left: 10px;
       background-color: #007bff;
     }
       
     button:last-child {
-      margin-right: 0;
     }
   `;
 
     render() {
         return html`
-      <button>Button 1</button>
-      <button>Button 2</button>
-      <button>Button 3</button>
-      <button>Button 4</button>
+      <button>Home</button>
+      <button>Services</button>
+      <button>Prijzen</button>
+      <button>Informatie</button>
     `;
     }
 }
