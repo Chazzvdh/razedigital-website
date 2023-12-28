@@ -10,7 +10,7 @@ class HeaderComponent extends LitElement {
     header {
       display: flex;
       justify-content: left;
-      background-color: var(--primary-background-color);
+      background-color: var(--secondary-background-color);
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
       color: white;
       padding-right: 50vh;
@@ -25,23 +25,26 @@ class HeaderComponent extends LitElement {
     }
 
     img {
-      width: 150px; /* Adjust the height as needed */
+      width: 100px; /* Adjust the height as needed */
       padding: 20px;
     }
       
     button-element {
       width: 100%;
+      white-space: nowrap;
     }
   `;
 
     render() {
         return html`
       <header>
-        <img src="src/assets/razelogo.svg" alt="Your Logo">
+          <a href="./"> <!-- Add the link to the home page -->
+              <img src="src/assets/razelogo.svg" alt="Your Logo">
+          </a>
         <button-element href="./diensten" label="Diensten"></button-element>
-        <button-element href="./over-ons" label="Over ons"></button-element>
-        <button-element href="./afspraak-maken" label="Afspraak maken"></button-element>
         <button-element href="./tarieven" label="Tarieven"></button-element>
+        <button-element href="./over-mij" label="Over mij"></button-element>
+        <button-element href="./afspraak-maken" label="Afspraak maken"></button-element>
         <button-element href="./contact" label="Contact"></button-element>
       </header>
     `;

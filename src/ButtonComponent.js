@@ -3,7 +3,7 @@ class ButtonComponent extends LitElement {
 
     static styles = css`
     button {
-      background-color: var(--primary-background-color);
+      background-color: var(--secondary-background-color);
       color: var(--primary-text-color);
       border: none;
       flex: 1;
@@ -32,7 +32,7 @@ class ButtonComponent extends LitElement {
     }
 
     button:hover {
-      background-color: var(--secondary-background-color);
+      background-color: var(--primary-background-color);
     }
   `;
 

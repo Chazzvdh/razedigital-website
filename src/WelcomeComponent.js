@@ -25,10 +25,11 @@ class WelcomeComponent extends LitElement {
     render() {
         return html`
             <section>
-                <h2>Welkom bij RAZE</h2>
+                <h2>Welkom bij</h2>
+                <img src="/src/assets/razelogo.svg" width="100vh">
                 <p>
                     Mijn naam is Chazz van den Hof, een enthousiaste 22-jarige HBO-ICT student uit Hoofddorp.
-                    Ik ben gepassioneerd over informatietechnologie en bied professionele IT-diensten aan om mensen te ondersteunen bij hun technologische behoeften.
+                    Ik ben gepassioneerd over alles wat met IT te maken heeft en bied professionele IT-diensten aan om mensen te ondersteunen bij hun technologische behoeften.
                     Mijn benadering is vergelijkbaar met een "student aan huis", waarbij ik mijn expertise deel om u te helpen bij IT-problemen en vragen.
                 </p>
                 <p>

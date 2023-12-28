@@ -2,6 +2,7 @@
     --primary-background-color: #f4f4f4;
     --secondary-background-color: #fff;
     --primary-text-color: #333;
+    --secondary-text-color: #fff;
     --primary-accent-color: #007bff;
     --secondary-accent-color: #6c757d;
     --success-color: #28a745;
@@ -20,7 +21,7 @@ body {
 
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
-  grid-template-rows: 1fr 100% 1fr;
+  grid-template-rows: auto auto 1fr;
   grid-template-areas:
     "header header header"
     "menu main side"
@@ -31,7 +32,7 @@ body {
 @media (max-width: 768px) {
   body {
     grid-template-columns: 1fr auto 1fr;
-    grid-template-rows: 1fr 1fr 100% 1fr;
+    grid-template-rows: 1fr 1fr auto 1fr;
     grid-template-areas:
       "header header header"
       "menu menu menu"
@@ -54,7 +55,7 @@ body {
 
 #main-container {
   grid-area: main;
-  margin: 1rem
+  margin: 1rem;
 }
 
 #side-container {
@@ -63,5 +64,6 @@ body {
 
 #footer-container {
   grid-area: footer;
+    align-self: end;
 }
 
