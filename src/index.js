@@ -9,7 +9,7 @@ import "/src/DienstComponent.js";
 import "/src/DienstenListComponent.js";
 import "/src/TarievenComponent.js";
 
-import { Router } from '/node_modules/@vaadin/router';
+import { Router } from '@vaadin/router';
 
 // Define routes
 const routes = [
