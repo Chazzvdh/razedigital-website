@@ -32,15 +32,16 @@ body {
 @media (max-width: 768px) {
   body {
     grid-template-columns: 1fr auto 1fr;
-    grid-template-rows: 1fr 1fr auto 1fr;
+    grid-template-rows: auto auto 1fr;
     grid-template-areas:
       "header header header"
-      "menu menu menu"
       "main main main"
       "footer footer footer";
+      height: 100vh;
   }
-    side-element, menu-element {
-      display: none;
+    side-element,
+    menu-element {
+        display: none;
     }
 
 }

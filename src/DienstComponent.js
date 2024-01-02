@@ -4,30 +4,34 @@ class DienstComponent extends LitElement {
     static properties = {
         type: { type: String },
         info: { type: String },
-        ppu: { type: Number }
+        ppk: { type: Number },
+        startTarief: { type: Number },
+        hasStartTarief: { type: Boolean }
     };
 
     constructor() {
         super();
         this.type = 'Dienst';
         this.info = 'Beschrijving';
-        this.ppu = 0;
+        this.ppk = 0;
+        this.startTarief = 5;
+        this.hasStartTarief = true;
     }
 
     static styles = css`
-    li {
-      
-    }
-      
-      div {
-        background-color: var(--secondary-background-color);
-        color: var(--primary-text-color);
-        padding: 10px;
-        margin-bottom: 10px;
+        li {
         
-        border-radius: 5px;;
-      }
-  `;
+        }
+        
+        div {
+            background-color: var(--secondary-background-color);
+            color: var(--primary-text-color);
+            padding: 10px;
+            margin-bottom: 10px;
+            
+            border-radius: 5px;
+        }
+    `;
 
     render() {
         return html`
@@ -35,11 +39,10 @@ class DienstComponent extends LitElement {
                 <li>
                     <strong><h3>${this.type}</h3></strong>
                     <p>${this.info}</p>
-                    <p><strong>€${this.ppu} per uur</strong></p>
+                    ${this.hasStartTarief ? html`<p><strong>€${this.ppk} per kwartier + €${this.startTarief} starttarief</strong></p>` : html`<p><strong>€${this.ppk} per kwartier</strong></p>`}
                 </li>
             </div>
-
-    `;
+        `;
     }
 }
 

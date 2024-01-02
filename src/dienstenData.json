@@ -1,0 +1,22 @@
+{
+  "diensten": [
+    {
+      "type": "Algemeen computeronderhoud",
+      "info": "Systeemoptimalisatie en versnelling, schijfopruiming en defragmentatie, software-updates en -upgrades.",
+      "ppk": 10,
+      "hasStartTarief": true
+    },
+    {
+      "type": "Trainingen en begeleiding",
+      "info": "Basisopleiding in computergebruik, instructies geven over specifieke softwaretoepassingen, hulp bieden bij het gebruik van nieuwe technologieën.",
+      "ppk": 7.50,
+      "hasStartTarief": true
+    },
+    {
+      "type": "Gegevensbackup",
+      "info": "Opzetten van geautomatiseerde back-ups, herstellen van verloren of verwijderde gegevens.",
+      "ppk": 15,
+      "hasStartTarief": false
+    }
+  ]
+}

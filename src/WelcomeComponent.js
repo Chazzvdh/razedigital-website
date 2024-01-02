@@ -14,7 +14,7 @@ class WelcomeComponent extends LitElement {
         }
 
         h2 {
-            color: var(--primary-accent-color);
+            color: var(--primary-text-color);
         }
       
         p {
@@ -25,8 +25,11 @@ class WelcomeComponent extends LitElement {
     render() {
         return html`
             <section>
-                <h2>Welkom bij</h2>
-                <img src="/src/assets/razelogo.svg" width="100vh">
+                <h2>Welkom bij Raze Digital, waar we technische uitdagingen omzetten in oplossingen!</h2>
+                
+                <p>
+                    Professionele IT-Ondersteuning - Vertrouwd, Vriendelijk en Voordelig
+                </p>
                 <p>
                     Mijn naam is Chazz van den Hof, een enthousiaste 22-jarige HBO-ICT student uit Hoofddorp.
                     Ik ben gepassioneerd over alles wat met IT te maken heeft en bied professionele IT-diensten aan om mensen te ondersteunen bij hun technologische behoeften.
