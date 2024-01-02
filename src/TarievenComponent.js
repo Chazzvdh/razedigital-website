@@ -143,11 +143,11 @@ class TarievenComponent extends LitElement {
         <hr>
         <p>Prijs per kwartier: <strong>€${this.prijsPerKwartier}</strong></p>
         <p>Starttarief: <strong>€${this.startTarief}</strong></p>
-        <p>${this.hardwareTarief ? html`Hardware kosten: <strong>€${this.hardwareTarief}</strong>` : html`<strong></strong>`}</p>
+        <p>${this.hardwareTarief ? html`Hardware kosten: <strong>€${this.hardwareTarief}</strong> <a href="">Wat zijn deze kosten?</a>` : html`<strong></strong>`}</p>
         <label for="tijd">Voer de tijd in (kwartieren):</label>
         <input type="number" id="tijd" .value="${this.ingevoerdeTijd}" @input="${this.handleTijdChange}" min="1">
         <div id="totaalBedrag"><p><strong>Totaal bedrag: €${this.calculateCost()}</strong></p></div>
-        <p>Er is sprake van minimaal 1 kwartier, daarna wordt er per kwartier gerekend.</p>
+        <p>Er is sprake van een minimale afname van 1 kwartier.</p>
         <hr>
         <p><strong>Let op:</strong> dit is een schatting en kan variëren afhankelijk van de complexiteit van de dienst.</p>
         <p>Alle prijzen zijn inclusief BTW.</p>

@@ -10,7 +10,7 @@
     {
       "type": "Trainingen en begeleiding",
       "info": "Hulp in computergebruik, instructies geven over specifieke softwaretoepassingen, hulp bieden bij het gebruik van nieuwe technologieën.",
-      "ppk": 10,
+      "ppk": 12.50,
       "hasStartTarief": true,
       "startTarief": 5
     },
@@ -21,7 +21,7 @@
       "hasStartTarief": true,
       "startTarief": 20,
       "hardwareTarief": 100,
-      "extraTarief": "Er wordt bij deze dienst een extra tarief van 50 euro aangerekend voor de aankoop van een externe harde schijf.",
+      "extraTarief": "Er wordt bij deze dienst een extra tarief van 100 euro aangerekend voor de aankoop van een externe harde schijf.",
       "extraInfo": "Pas op: de kans bestaat dat de gegevens verloren zijn. Er wordt geen garantie gegeven dat de gegevens teruggevonden worden."
     }
   ]

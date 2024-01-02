@@ -45,6 +45,7 @@ class HeaderComponent extends LitElement {
         <button-element href="./over-mij" label="Over mij"></button-element>
         <button-element href="./afspraak-maken" label="Afspraak maken"></button-element>
         <button-element href="./contact" label="Contact"></button-element>
+          <button-element href="./faq" label="FAQ"></button-element>
     `;
     }
 }

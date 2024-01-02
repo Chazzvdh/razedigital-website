@@ -25,7 +25,7 @@ class WelcomeComponent extends LitElement {
     render() {
         return html`
             <section>
-                <h2>Welkom bij Raze Digital, waar we technische uitdagingen omzetten in oplossingen!</h2>
+                <h2>Welkom bij <img src="src/assets/razelogo-horizontal.svg" alt="" width="200px"> IT Ondersteuning, waar ik technische uitdagingen omzet in oplossingen!</h2>
                 
                 <p>
                     Professionele IT-Ondersteuning - Vertrouwd, Vriendelijk en Voordelig

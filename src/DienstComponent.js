@@ -6,7 +6,10 @@ class DienstComponent extends LitElement {
         info: { type: String },
         ppk: { type: Number },
         startTarief: { type: Number },
-        hasStartTarief: { type: Boolean }
+        hasStartTarief: { type: Boolean },
+        hardwareTarief: { type: Number },
+        extraTarief: { type: String },
+        extraInfo: { type: String }
     };
 
     constructor() {
@@ -16,21 +19,24 @@ class DienstComponent extends LitElement {
         this.ppk = 0;
         this.startTarief = 0;
         this.hasStartTarief = true;
+        this.hardwareTarief = 0;
+        this.extraTarief = '';
+        this.extraInfo = '';
     }
 
     static styles = css`
-        li {
-        
-        }
-        
-        div {
-            background-color: var(--secondary-background-color);
-            color: var(--primary-text-color);
-            padding: 10px;
-            margin-bottom: 10px;
-            
-            border-radius: 5px;
-        }
+      li {
+
+      }
+
+      div {
+        background-color: var(--secondary-background-color);
+        color: var(--primary-text-color);
+        padding: 10px;
+        margin-bottom: 10px;
+
+        border-radius: 5px;
+      }
     `;
 
     render() {
@@ -40,6 +46,9 @@ class DienstComponent extends LitElement {
                     <strong><h3>${this.type}</h3></strong>
                     <p>${this.info}</p>
                     ${this.hasStartTarief ? html`<p><strong>€${this.ppk} per kwartier + €${this.startTarief} starttarief</strong></p>` : html`<p><strong>€${this.ppk} per kwartier</strong></p>`}
+                    ${this.hardwareTarief ? html`<p><strong>Hardwarekosten: €${this.hardwareTarief}</strong></p>` : ''}
+                    ${this.extraTarief ? html`<p>${this.extraTarief}</p>` : ''}
+                    ${this.extraInfo ? html`<p>${this.extraInfo}</p>` : ''}
                 </li>
             </div>
         `;

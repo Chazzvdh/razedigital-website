@@ -36,6 +36,7 @@ class FooterComponent extends LitElement {
         <p>Email: chazz@ziggo.nl</p>
         <p>Telefoon: 06 13640652</p>
         <p>KVK Nummer: 12345678</p>
+          <img src="src/assets/razelogo-horizontal.svg" alt="" width="150px">
       </div>
     `;
     }
