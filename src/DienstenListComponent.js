@@ -21,7 +21,7 @@ class DienstenListComponent extends LitElement {
                         type="${dienst.type}"
                         info="${dienst.info}"
                         ppk="${dienst.ppk}"
-                        .hasStartTarief="${dienst.hasStartTarief}"
+                        .hasStartTarief="${dienst.startTarief}"
                     ></dienst-element>
                 `)}
             </ul>

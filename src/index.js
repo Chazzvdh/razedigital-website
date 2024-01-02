@@ -19,6 +19,7 @@ const routes = [
     { path: '/afspraak-maken', component: 'afspraak-maken-element' },
     { path: '/tarieven', component: 'tarieven-element' },
     { path: '/contact', component: 'contact-element' },
+    { path: '/factuur-generator', component: 'invoice-element' }
 ];
 
 // Initialize the router

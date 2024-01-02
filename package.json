@@ -10,7 +10,8 @@
   },
   "dependencies": {
     "@vaadin/router": "^1.7.5",
-    "lit": "^3.1.0"
+    "lit": "^3.1.0",
+    "moment": "^2.30.1"
   },
   "devDependencies": {
     "vite": "^5.0.8"

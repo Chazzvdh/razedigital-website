@@ -34,7 +34,7 @@ class FooterComponent extends LitElement {
         <h3>Contactinformatie</h3>
         <p>Adres: Bolivar 15, Hoofddorp</p>
         <p>Email: chazz@ziggo.nl</p>
-        <p>Telefoon: +31 6 13640652</p>
+        <p>Telefoon: 06 13640652</p>
         <p>KVK Nummer: 12345678</p>
       </div>
     `;

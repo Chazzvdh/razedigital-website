@@ -14,7 +14,7 @@ class DienstComponent extends LitElement {
         this.type = 'Dienst';
         this.info = 'Beschrijving';
         this.ppk = 0;
-        this.startTarief = 5;
+        this.startTarief = 0;
         this.hasStartTarief = true;
     }
 

@@ -1,22 +1,28 @@
 {
   "diensten": [
     {
-      "type": "Algemeen computeronderhoud",
-      "info": "Systeemoptimalisatie en versnelling, schijfopruiming en defragmentatie, software-updates en -upgrades.",
+      "type": "Algemeen digitale ondersteuning",
+      "info": "Hulp bij het oplossen van problemen met uw computer, smartphone, tablet, geluidsapparatuur, televisie, etc.",
       "ppk": 10,
-      "hasStartTarief": true
+      "hasStartTarief": true,
+      "startTarief": 5
     },
     {
       "type": "Trainingen en begeleiding",
-      "info": "Basisopleiding in computergebruik, instructies geven over specifieke softwaretoepassingen, hulp bieden bij het gebruik van nieuwe technologieën.",
-      "ppk": 7.50,
-      "hasStartTarief": true
+      "info": "Hulp in computergebruik, instructies geven over specifieke softwaretoepassingen, hulp bieden bij het gebruik van nieuwe technologieën.",
+      "ppk": 10,
+      "hasStartTarief": true,
+      "startTarief": 5
     },
     {
       "type": "Gegevensbackup",
-      "info": "Opzetten van geautomatiseerde back-ups, herstellen van verloren of verwijderde gegevens.",
+      "info": "Herstellen van corrupte Opslag met verloren of verwijderde gegevens.",
       "ppk": 15,
-      "hasStartTarief": false
+      "hasStartTarief": true,
+      "startTarief": 20,
+      "hardwareTarief": 100,
+      "extraTarief": "Er wordt bij deze dienst een extra tarief van 50 euro aangerekend voor de aankoop van een externe harde schijf.",
+      "extraInfo": "Pas op: de kans bestaat dat de gegevens verloren zijn. Er wordt geen garantie gegeven dat de gegevens teruggevonden worden."
     }
   ]
 }
