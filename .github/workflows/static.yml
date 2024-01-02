@@ -23,25 +23,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-
-      - name: Build and copy files
-        run: |
-          npm install  # Install dependencies if needed
-          npm run build # Replace this with your build command
-          cp -r build/* $GITHUB_WORKSPACE
-
-      - name: Upload artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: website
-          path: $GITHUB_WORKSPACE
+        uses: actions/checkout@v2
 
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
         with:
-          artifacts: website
+          # Specify the branch to deploy
+          branch: master
