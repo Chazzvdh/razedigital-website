@@ -8,6 +8,7 @@ import "/src/SideComponent.js";
 import "/src/DienstComponent.js";
 import "/src/DienstenListComponent.js";
 import "/src/TarievenComponent.js";
+import "/src/ContactComponent.js";
 
 import { Router } from '@vaadin/router';
 
@@ -18,7 +19,7 @@ const routes = [
     { path: '/over-mij', component: 'over-mij-element' },
     { path: '/afspraak-maken', component: 'afspraak-maken-element' },
     { path: '/tarieven', component: 'tarieven-element' },
-    { path: '/contact', component: 'contact-element' },
+    { path: '/contact', component: 'contact-form-element' },
     { path: '/factuur-generator', component: 'invoice-element' }
 ];
 

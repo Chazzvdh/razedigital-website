@@ -15,7 +15,7 @@
       "startTarief": 5
     },
     {
-      "type": "Gegevensbackup",
+      "type": "Gegevensherstel",
       "info": "Herstellen van corrupte Opslag met verloren of verwijderde gegevens.",
       "ppk": 15,
       "hasStartTarief": true,
