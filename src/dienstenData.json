@@ -21,7 +21,7 @@
       "hasStartTarief": true,
       "startTarief": 20,
       "hardwareTarief": 100,
-      "extraTarief": "Er wordt bij deze dienst een extra tarief van 100 euro aangerekend voor de aankoop van een externe harde schijf.",
+      "extraTarief": "Er wordt bij deze dienst een extra tarief van 100 euro aangerekend wanneer de klant er voor kiest om de gegevens op een nieuwe opslag te laten zetten.",
       "extraInfo": "Pas op: de kans bestaat dat de gegevens verloren zijn. Er wordt geen garantie gegeven dat de gegevens teruggevonden worden."
     }
   ]

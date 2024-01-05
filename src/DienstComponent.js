@@ -36,6 +36,8 @@ class DienstComponent extends LitElement {
         margin-bottom: 10px;
 
         border-radius: 5px;
+        
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       }
     `;
 
@@ -46,7 +48,7 @@ class DienstComponent extends LitElement {
                     <strong><h3>${this.type}</h3></strong>
                     <p>${this.info}</p>
                     ${this.hasStartTarief ? html`<p><strong>€${this.ppk} per kwartier + €${this.startTarief} starttarief</strong></p>` : html`<p><strong>€${this.ppk} per kwartier</strong></p>`}
-                    ${this.hardwareTarief ? html`<p><strong>Hardwarekosten: €${this.hardwareTarief}</strong></p>` : ''}
+                    ${this.hardwareTarief ? html`<p><strong>Optionele Hardwarekosten: €${this.hardwareTarief}</strong></p>` : ''}
                     ${this.extraTarief ? html`<p>${this.extraTarief}</p>` : ''}
                     ${this.extraInfo ? html`<p>${this.extraInfo}</p>` : ''}
                 </li>
