@@ -37,16 +37,16 @@ class HeaderComponent extends LitElement {
 
     render() {
         return html`
-          <a href="./"> <!-- Add the link to the home page -->
-              <img src="src/assets/razelogo-vertical.svg" alt="Your Logo">
-          </a>
-        <button-element href="./diensten" label="Diensten"></button-element>
-        <button-element href="./tarieven" label="Tarieven"></button-element>
-        <button-element href="./over-mij" label="Over mij"></button-element>
-        <button-element href="./afspraak-maken" label="Afspraak maken"></button-element>
-        <button-element href="./contact" label="Contact"></button-element>
-          <button-element href="./faq" label="FAQ"></button-element>
-    `;
+            <a href="/"> <!-- Add the link to the home page -->
+                <img src="src/assets/razelogo-vertical.svg" alt="Your Logo">
+            </a>
+            <button-element href="./diensten" label="Diensten"></button-element>
+            <button-element href="./tarieven" label="Tarieven"></button-element>
+            <button-element href="./over-mij" label="Over mij"></button-element>
+            <button-element href="./afspraak-maken" label="Afspraak maken"></button-element>
+            <button-element href="./contact" label="Contact"></button-element>
+            <button-element href="./faq" label="FAQ"></button-element>
+        `;
     }
 }
 
