@@ -31,7 +31,7 @@ class ContactComponent extends LitElement {
         const formData = new FormData(event.target);
 
         const payload = {
-            to: "chazz@ziggo.nl", // Replace with your email address
+            to: "chazzvdh@ziggo.nl", // Replace with your email address
             subject: "New Contact Form Submission",
             text: `Name: ${formData.get("name")}\nEmail: ${formData.get("email")}\nMessage: ${formData.get("message")}`
         };
@@ -40,7 +40,7 @@ class ContactComponent extends LitElement {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
-                "Api-Key": "your-mailersend-api-key" // Replace with your MailerSend API key
+                "Api-Key": "mlsn.419a235549d73ac5833c726df27278e33bf586e035bb0f0f95ffd003e2a74743" // Replace with your MailerSend API key
             },
             body: JSON.stringify(payload)
         })

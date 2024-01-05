@@ -32,6 +32,10 @@ class WelcomeComponent extends LitElement {
         width: 50%;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
       }
+
+      button:hover {
+        background-color: var(--dark-primary-accent-color);
+      }
       
       #bellen {
         background-color: var(--secondary-background-color);
@@ -42,9 +46,6 @@ class WelcomeComponent extends LitElement {
         background-color: var(--dark-secondary-background-color);
       }
       
-      button:hover {
-        background-color: var(--dark-primary-accent-color);
-      }
       #contact-div {
         display: flex;
         justify-content: space-evenly;
@@ -60,10 +61,12 @@ class WelcomeComponent extends LitElement {
         window.location.href = link;
     }
 
+
     render() {
         return html`
             <section>
-                <h2>Welkom bij <img class="logo" src="src/assets/razelogo-horizontal.svg" alt="raze-logo" width="200px"><br>IT Ondersteuning, waar ik technische uitdagingen omzet in oplossingen!</h2>
+                <h2>Welkom bij <img class="logo" src="src/assets/razelogo-horizontal.svg" alt="Raze Logo" width="200px"><br>hulp aan huis, waar ik technische uitdagingen omzet in oplossingen!</h2>
+
 
                 <p>
                     Hallo! mijn naam is Chazz van den Hof, een enthousiaste 22-jarige HBO-ICT student uit Hoofddorp.

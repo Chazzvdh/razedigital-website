@@ -34,6 +34,8 @@ class DienstComponent extends LitElement {
         color: var(--primary-text-color);
         padding: 10px;
         margin-bottom: 10px;
+        
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 
         border-radius: 5px;
       }

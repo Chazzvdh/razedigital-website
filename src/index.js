@@ -1,14 +1,14 @@
-import "/src/ButtonContainerComponent.js";
-import "/src/WelcomeComponent.js";
-import "/src/HeaderComponent.js";
-import "/src/ButtonComponent.js";
-import "/src/FooterComponent.js";
-import "/src/MenuComponent.js";
-import "/src/SideComponent.js";
-import "/src/DienstComponent.js";
-import "/src/DienstenListComponent.js";
-import "/src/TarievenComponent.js";
-import "/src/ContactComponent.js";
+import "/src/components/ButtonContainerComponent.js";
+import "/src/components/WelcomeComponent.js";
+import "/src/components/HeaderComponent.js";
+import "/src/components/ButtonComponent.js";
+import "/src/components/FooterComponent.js";
+import "/src/components/MenuComponent.js";
+import "/src/components/SideComponent.js";
+import "/src/components/DienstComponent.js";
+import "/src/components/DienstenListComponent.js";
+import "/src/components/TarievenComponent.js";
+import "/src/components/ContactComponent.js";
 
 import { Router } from '@vaadin/router';
 

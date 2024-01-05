@@ -4,10 +4,8 @@
     --dark-secondary-background-color: #f8f9fa;
     --primary-text-color: #333;
     --secondary-text-color: #fff;
-
     --primary-accent-color: #007bff;
     --dark-primary-accent-color: #0069d9;
-
     --secondary-accent-color: #6c757d;
     --success-color: #28a745;
     --info-color: #17a2b8;
@@ -16,65 +14,60 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
-  padding: 0;
-
-  color: var(--primary-text-color);
-
-    background: linear-gradient(to right, #ffffff, var(--primary-background-color)) left, url('/src/assets/laptopphoto.jpg') center;
-
-    background-size: cover; /* You can adjust this property based on your preference */
-
-  display: grid;
-  grid-template-columns: 1fr 5fr 1fr;
-  grid-template-rows: auto auto 1fr;
-  grid-template-areas:
-    "header header header"
-    "menu main side"
-    "footer footer footer";
-  height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--primary-text-color);
+    background: linear-gradient(90deg, #ffffff, var(--primary-background-color)), url('/src/assets/laptopphoto.jpg') center/cover;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: auto auto 1fr;
+    grid-template-areas:
+        "header header header"
+        "menu main side"
+        "footer footer footer";
+    height: 100vh;
 }
 
 @media (max-width: 768px) {
-  body {
-    grid-template-columns: 1fr auto 1fr;
-    grid-template-rows: auto auto 1fr;
-    grid-template-areas:
-      "header header header"
-      "main main main"
-      "footer footer footer";
-      height: 100vh;
-  }
-    side-element,
-    menu-element {
-        display: none;
+    body {
+        grid-template-columns: 1fr auto 1fr;
+        grid-template-rows: auto auto 1fr;
+        grid-template-areas:
+            "header header header"
+            "main main main"
+            "footer footer footer";
+        height: 100vh;
     }
 
+    #side-container,
+    #menu-container {
+        display: none;
+    }
 }
 
 #header-container {
-  grid-area: header;
+    grid-area: header;
 }
 
 #menu-container {
-  grid-area: menu;
+    grid-area: menu;
 }
 
 #main-container {
-  grid-area: main;
-  margin: 1rem;
+    grid-area: main;
+    margin: 1rem;
 }
 
 #side-container {
-  grid-area: side;
+    grid-area: side;
 }
 
 #footer-container {
-  grid-area: footer;
+    grid-area: footer;
     align-self: end;
 }
 
 .logo {
-    background-color: #6c757d;
+    background-color: var(--secondary-accent-color);
 }
