@@ -161,7 +161,9 @@ class TarievenComponent extends LitElement {
                     </select>
                     <p>${this.geselecteerdeDienst ? html`<strong>${this.geselecteerdeDienst.info}</strong>` : html`<strong>Geen dienst geselecteerd</strong>`}</p>
                     <p>Weet u niet zeker of ik u kan helpen? Neem gerust contact met mij op!</p>
-                    <button>Contact</button>
+                    <a href="/contact">
+                        <button>Contact</button>
+                    </a>
                     <hr>
                     <p>Prijs per kwartier: <strong>€${this.prijsPerKwartier}</strong></p>
                     <p>Starttarief: <strong>€${this.startTarief}</strong></p>

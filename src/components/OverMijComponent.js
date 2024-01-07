@@ -67,7 +67,7 @@ class OverMijComponent extends LitElement {
         this.studie = "HBO-ICT in Utrecht";
         this.woonplaats = "Hoofddorp";
         this.interesses = "Alles wat met IT of ICT te maken heeft";
-        this.contactInformatie = "Heeft u nog vragen of wilt u meer informatie? Neem dan gerust contact met mij op!";
+        this.contactInformatie = "Heeft u nog vragen over mij en/of mijn diensten? Neem dan gerust contact met mij op via de onderstaande knop!";
         // Voeg hier de URL naar jouw foto toe
         this.fotoUrl = "src/assets/chazz.jpeg";
     }

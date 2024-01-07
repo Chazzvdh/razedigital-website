@@ -4,8 +4,8 @@
     --dark-secondary-background-color: #f8f9fa;
     --primary-text-color: #333;
     --secondary-text-color: #fff;
-    --primary-accent-color: #81a7c0;
-    --dark-primary-accent-color: #68879b;
+    --primary-accent-color: #68879b;
+    --dark-primary-accent-color: #556e7e;
     --secondary-accent-color: #6c757d;
     --success-color: #28a745;
     --info-color: #17a2b8;
@@ -20,7 +20,8 @@ body {
     margin: 0;
     padding: 0;
     color: var(--primary-text-color);
-    background: linear-gradient(90deg, #ffffff, var(--primary-background-color)), url('/src/assets/seamless-background-computers.jpg') repeat;
+    background: url('/src/assets/seamless-background-computers.jpg');
+    backdrop-filter: blur(3px);
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
     grid-template-rows: auto auto 1fr;
@@ -33,7 +34,7 @@ body {
 
 @media (max-width: 768px) {
     body {
-        background: linear-gradient(90deg, #ffffff, var(--primary-background-color)), url('/src/assets/seamless-background-computers.jpg') center/cover;
+        background: url('/src/assets/seamless-background-computers.jpg');
 
         grid-template-columns: 1fr auto 1fr;
         grid-template-rows: auto auto 1fr;
