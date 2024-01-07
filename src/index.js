@@ -1,6 +1,7 @@
 import "/src/components/ButtonContainerComponent.js";
 import "/src/components/WelcomeComponent.js";
 import "/src/components/HeaderComponent.js";
+import "/src/components/HeaderButtonComponent.js";
 import "/src/components/ButtonComponent.js";
 import "/src/components/FooterComponent.js";
 import "/src/components/MenuComponent.js";
@@ -8,7 +9,8 @@ import "/src/components/SideComponent.js";
 import "/src/components/DienstComponent.js";
 import "/src/components/DienstenListComponent.js";
 import "/src/components/TarievenComponent.js";
-import "/src/components/ContactComponent.js";
+import "/src/components/ContactFormComponent.js";
+import "/src/components/OverMijComponent.js";
 
 import { Router } from '@vaadin/router';
 

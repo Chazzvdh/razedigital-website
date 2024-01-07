@@ -6,7 +6,7 @@ class WelcomeComponent extends LitElement {
             display: block;
             padding: 20px;
             background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: var(--box-shadow-settings);
             border-radius: 8px;
         }
       
@@ -30,7 +30,8 @@ class WelcomeComponent extends LitElement {
         border: none;
         cursor: pointer;
         width: 50%;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        font-size: 100%;
+        box-shadow: var(--box-shadow-settings);
       }
 
       button:hover {
@@ -65,7 +66,10 @@ class WelcomeComponent extends LitElement {
     render() {
         return html`
             <section>
-                <h2>Welkom bij <img class="logo" src="src/assets/razelogo-horizontal.svg" alt="Raze Logo" width="200px"><br>hulp aan huis, waar ik technische uitdagingen omzet in oplossingen!</h2>
+                <h2>
+                    <img class="logo" src="src/assets/hulpaanhuis-large.svg" alt="Raze Logo" width="200px">
+                    <br>Waar ik technische uitdagingen omzet in oplossingen!
+                </h2>
 
 
                 <p>
@@ -88,7 +92,7 @@ class WelcomeComponent extends LitElement {
                     Laten we samen werken aan het optimaliseren van uw digitale wereld!
                 </p>
                 <div id="contact-div">
-                    <button id="afspraak" @click="${() => this.handleClick('afspraak-maken')}">Maak een afspraak</button>
+                    <button id="afspraak" @click="${() => this.handleClick('contact')}">Maak een afspraak</button>
                     <button id="bellen" @click="${() => this.handleClick('tel:0613640652')}">Belt u liever?</button>
                 </div>
             </section>

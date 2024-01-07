@@ -3,17 +3,20 @@ import dienstenData from '../data/dienstenData.json'; // Vervang 'jouw-bestandsn
 
 class DienstenListComponent extends LitElement {
     static styles = css`
+      
+      #dienst-info {
+        background-color: var(--secondary-background-color);
+        color: var(--primary-text-color);
+        padding: 20px;
+        box-shadow: var(--box-shadow-settings);
+        border-radius: 5px;
+      }
       ul {
         list-style-type: none;
         padding: 0;
       }
       
       #dienst {
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-        background-color: var(--secondary-background-color);
-        padding: 10px;
-        margin-bottom: 10px;
-        border-radius: 5px;
       }
     `;
 

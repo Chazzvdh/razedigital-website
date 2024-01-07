@@ -8,7 +8,7 @@ class TarievenComponent extends LitElement {
       
 
     h2 {
-      color: #333;
+      color: var(--primary-text-color);
       margin-bottom: 15px;
     }
 
@@ -32,7 +32,7 @@ class TarievenComponent extends LitElement {
     }
       
     #totaalBedrag {
-      background-color: #007bff;
+      background-color: var(--primary-accent-color);
       color: var(--secondary-text-color);
       padding: 5px;
       border-radius: 5px;
@@ -53,6 +53,13 @@ class TarievenComponent extends LitElement {
         grid-template-columns: 1fr 1fr;
         gap: 5%;
       }
+      
+      @media (max-width: 768px) {
+        #div-container {
+          grid-template-columns: 1fr;
+          gap: 0;
+        }
+      }
 
       #tarief-berekenen-div, #dienst-info {
         display: block;
@@ -60,7 +67,7 @@ class TarievenComponent extends LitElement {
         padding: 20px;
         border: 1px solid #ddd;
         border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        box-shadow: var(--box-shadow-settings);
         background-color: var(--secondary-background-color);
         text-align: center;
       }
@@ -73,6 +80,7 @@ class TarievenComponent extends LitElement {
         ingevoerdeTijd: { type: Number },
         geselecteerdeDienst: { type: Object },
         diensten: { type: Array },
+        gemiddeldeDuur: { type: Number },
     };
 
     async connectedCallback() {
@@ -142,26 +150,6 @@ class TarievenComponent extends LitElement {
     render() {
         return html`
             <div id="div-container">
-                <div id="dienst-info">
-                    <h2>Mijn Diensten</h2>
-                    ${this.diensten.map((dienst) => html`
-                        <div>
-                          <h3>${dienst.type}</h3>
-                          <p>${dienst.info}</p>
-                          <p>Prijs per uur: ${dienst.ppk} euro</p>
-                          <p>
-                            Starttarief:
-                            ${dienst.hasStartTarief ? html`${dienst.startTarief} euro` : 'Geen starttarief'}
-                          </p>
-                          ${dienst.type === 'Gegevensherstel' ? html`
-                                <div>
-                                  <p>Hardwaretarief: ${dienst.hardwareTarief} euro</p>
-                                  <p>${dienst.extraInfo}</p>
-                                  <p>${dienst.extraTarief}</p>
-                                </div>` : ''}
-                          <hr />
-                        </div>`)}
-                </div>
                 <div id="tarief-berekenen-div">
                     <h2>Tarief Berekenen</h2>
                     <label for="dienst">Selecteer dienst:</label>
@@ -185,6 +173,28 @@ class TarievenComponent extends LitElement {
                     <hr>
                     <p><strong>Let op:</strong> dit is een schatting en kan variëren afhankelijk van de complexiteit van de dienst.</p>
                     <p>Alle prijzen zijn inclusief BTW.</p>
+                </div>
+                <div id="dienst-info">
+                    <h2>Mijn Diensten</h2>
+                    ${this.diensten.map((dienst) => html`
+                        <div>
+                          <h3>${dienst.type}</h3>
+                          <p>${dienst.info}</p>
+                          <p>Prijs per kwartier: ${dienst.ppk} euro</p>
+                            <p>Gemiddelde duur: ${dienst.gemiddeldeDuur} uur</p>
+
+                            <p>
+                            Starttarief:
+                            ${dienst.hasStartTarief ? html`${dienst.startTarief} euro` : 'Geen starttarief'}
+                          </p>
+                          ${dienst.type === 'Gegevensherstel' ? html`
+                                <div>
+                                  <p>Hardwaretarief: ${dienst.hardwareTarief} euro</p>
+                                  <p>${dienst.extraInfo}</p>
+                                  <p>${dienst.extraTarief}</p>
+                                </div>` : ''}
+                          <hr />
+                        </div>`)}
                 </div>
             </div>
     `;

@@ -4,6 +4,7 @@
       "type": "Algemeen digitale ondersteuning",
       "info": "Hulp bij het oplossen van problemen met uw computer, smartphone, tablet, geluidsapparatuur, televisie, etc.",
       "ppk": 10,
+      "gemiddeldeDuur": 1,
       "hasStartTarief": true,
       "startTarief": 5
     },
@@ -11,6 +12,7 @@
       "type": "Trainingen en begeleiding",
       "info": "Hulp in computergebruik, instructies geven over specifieke softwaretoepassingen, hulp bieden bij het gebruik van nieuwe technologieën.",
       "ppk": 12.50,
+      "gemiddeldeDuur": 1,
       "hasStartTarief": true,
       "startTarief": 5
     },
@@ -18,6 +20,7 @@
       "type": "Gegevensherstel",
       "info": "Herstellen van corrupte Opslag met verloren of verwijderde gegevens.",
       "ppk": 15,
+      "gemiddeldeDuur": 10,
       "hasStartTarief": true,
       "startTarief": 20,
       "hardwareTarief": 100,
