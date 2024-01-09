@@ -16,7 +16,6 @@ class ContactFormComponent extends LitElement {
       padding: 20px;
       border-radius: 5px;
       box-shadow: var(--box-shadow-settings);
-      margin: 0 20%;
     }
       
       @media (max-width: 768px) {
@@ -103,8 +102,6 @@ class ContactFormComponent extends LitElement {
             <option value="" disabled selected>Selecteer een dienst</option>
             ${this.diensten.map(dienst => html`<option value="${JSON.stringify(dienst)}">${dienst.type}</option>`)}
           </select>
-
-            <p>Uw gegevens worden alleen gebruikt om contact met u op te nemen en worden niet opgeslagen.</p>
             
             <hr>
 
@@ -112,6 +109,7 @@ class ContactFormComponent extends LitElement {
           <textarea id="message" name="message" rows="4" required></textarea>
 
           <button type="submit">Verstuur</button>
+            <p>Uw gegevens worden alleen gebruikt om contact met u op te nemen en worden niet opgeslagen.</p>
             <p>Heeft u liever telefonisch contact? Bel dan naar <a href="tel:0613640652">0613640652</a></p>
             <p>Door dit formulier te versturen gaat u akkoord met de <a href="./privacyverklaring">privacyverklaring</a></p>
         </form>

@@ -12,7 +12,6 @@ class HeaderButtonComponent extends LitElement {
       font-size: 150%;
       position: relative;
       height: 100%;
-      width: 100%;
     }
 
     button::before {
@@ -31,8 +30,9 @@ class HeaderButtonComponent extends LitElement {
       transform: scaleX(1);
     }
 
-    button:hover {
-      background-color: var(--primary-background-color);
+    button:hover p{
+      transform: translateY(5px);
+      transition: 0.2s ease-in-out;
     }
   `;
 
@@ -42,7 +42,7 @@ class HeaderButtonComponent extends LitElement {
     };
 
     render() {
-        return html`<button @click="${this.handleButtonClick}">${this.label}</button>`;
+        return html`<button @click="${this.handleButtonClick}"><p>${this.label}</p></button>`;
     }
 
     handleButtonClick() {

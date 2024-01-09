@@ -1,5 +1,5 @@
 :root {
-    --primary-background-color: rgba(128, 128, 128, 0);
+    --primary-background-color: #68879b;
     --secondary-background-color: #fff;
     --dark-secondary-background-color: #f8f9fa;
     --primary-text-color: #333;
@@ -25,7 +25,7 @@ body {
     grid-template-rows: auto auto 1fr;
     grid-template-areas:
         "header header header"
-        "menu main side"
+        "main main main"
         "footer footer footer";
     height: 100vh;
 }
@@ -42,11 +42,6 @@ body {
             "footer footer footer";
         height: 100vh;
     }
-
-    #side-container,
-    #menu-container {
-        display: none;
-    }
 }
 
 #header-container {
@@ -59,7 +54,7 @@ body {
 
 #main-container {
     grid-area: main;
-    margin: 1rem;
+    margin: 20px 10%;
     /*min-height: 100vh;*/
 }
 

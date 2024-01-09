@@ -51,7 +51,6 @@ class TarievenComponent extends LitElement {
       #div-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 5%;
       }
       
       @media (max-width: 768px) {
@@ -63,7 +62,7 @@ class TarievenComponent extends LitElement {
 
       #tarief-berekenen-div, #dienst-info {
         display: block;
-        margin: 20px auto;
+        margin: 20px;
         padding: 20px;
         border: 1px solid #ddd;
         border-radius: 8px;

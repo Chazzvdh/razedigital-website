@@ -6,7 +6,7 @@ class HeaderComponent extends LitElement {
     static styles = css`
     :host {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 2fr auto;
       
       justify-content: left;
       background-color: var(--secondary-background-color);
@@ -22,13 +22,29 @@ class HeaderComponent extends LitElement {
       #header-buttons {
       display: flex;
     }
-      
-    #header-contact {
+
+      #header-contact {
         display: flex;
-        justify-content: right;
         align-items: center;
-        gap: 5%;
-    }
+        gap: 20px; /* Increased the gap for better spacing */
+        margin-right: 40px; /* Added margin for better spacing */
+      }
+
+      #header-contact a {
+        text-decoration: none;
+        color: var(--primary-accent-color);
+        background-color: var(--secondary-background-color);
+        border: 1px solid var(--primary-accent-color);
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-weight: bold;
+        font-size: 14px;
+        transition: color 0.2s ease-in-out;
+      }
+
+      #header-contact a:hover {
+        color: var(--primary-text-color); /* Change the color on hover to a subtle highlight color */
+      }
 
     @media (max-width: 768px) {
       :host {
@@ -52,6 +68,11 @@ class HeaderComponent extends LitElement {
     img {
       width: 100px; /* Adjust the height as needed */
       padding: 20px;
+      transition: 0.2s ease-in-out;
+    }
+      
+    img:hover {
+        transform: scale(105%);
     }
       
     button-element {
@@ -80,7 +101,7 @@ class HeaderComponent extends LitElement {
         return html`
             <div id="header-buttons">
                 <a href="/"> <!-- Add the link to the home page -->
-                    <img src="./src/assets/hulpaanhuis-mid.svg" alt="Your Logo">
+                    <img src="src/assets/hulpaanhuis-mid.svg" alt="hulpaanhuis logo">
                 </a>
                 <header-button-element href="/diensten" label="Diensten"></header-button-element>
                 <header-button-element href="./tarieven" label="Tarieven"></header-button-element>
@@ -91,7 +112,6 @@ class HeaderComponent extends LitElement {
             </div>
             <div id="header-contact">
                 <a href="tel:0613640652">Liever bellen?<br>0613640652</a>
-                <a href="mailto:chazz@iggo.nl"></a>
             </div>
 
         `;

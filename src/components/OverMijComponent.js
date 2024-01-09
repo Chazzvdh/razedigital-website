@@ -10,7 +10,6 @@ class OverMijComponent extends LitElement {
 
           #over-mij {
             background-color: var(--secondary-background-color);
-            max-width: 1000px;
             margin: 0 auto;
             padding: 20px;
             border-radius: 5px;
@@ -24,14 +23,12 @@ class OverMijComponent extends LitElement {
           }
 
           img {
-            width: 30%;
-            border-radius: 5%;
-            //margin-bottom: 20px;
+            width: 20%;
+            // Remove border-radius from img
+            // margin-bottom: 20px;
             float: left; /* Laat de afbeelding naar links zweven */
             margin-right: 20px; /* Voeg wat ruimte aan de rechterkant van de afbeelding toe */
           }
-          
-          
 
           p {
             margin-bottom: 10px;
@@ -74,16 +71,16 @@ class OverMijComponent extends LitElement {
 
     render() {
         return html`
+            
       <div id="over-mij">
         <h1>Wie ben ik?</h1>
           <div id="img-div">
               <img src="${this.fotoUrl}" alt="Chazz van den Hof">
           </div>
-        <p>Hallo, ik ben ${this.naam}, een ${this.leeftijd}-jarige student die momenteel ${this.studie} studeert. Mijn roots liggen in het gezellige Hoofddorp, waar ik mijn hele leven heb gewoond.</p>
+          <p>Hallo, mijn naam is Chazz van den Hof, een enthousiaste 22-jarige student die op dit moment bezig is met het volgen van de opleiding HBO-ICT in het bruisende Utrecht. Mijn wortels liggen in het gezellige Hoofddorp, de plek waar ik mijn hele leven heb doorgebracht en waar ik veel waardevolle herinneringen heb opgebouwd.</p>
+        <p>Mijn passie voor alles wat met IT of ICT te maken heeft, is grenzeloos. Ik omarm de wereld van informatietechnologie met open armen en mijn betrokkenheid strekt zich uit tot het assisteren van anderen bij uiteenlopende IT-gerelateerde uitdagingen. Of het nu gaat om het oplossen van problemen, het optimaliseren van laptops of het fine-tunen van audiosystemen, ik ben altijd bereid om een helpende hand te bieden.</p>
 
-        <p>Als gepassioneerde IT-liefhebber omarm ik alles wat met IT of ICT te maken heeft. Mijn dienstverlening strekt zich uit tot het helpen van anderen met verschillende IT-gerelateerde uitdagingen. Of het nu gaat om problemen oplossen, laptops of audiosystemen, ik sta altijd klaar om te assisteren.</p>
-
-        <p>Studeren aan de HBO-ICT in Utrecht heeft mijn kennis verdiept en mijn nieuwsgierigheid naar de nieuwste technologieën vergroot. Buiten mijn studie en IT-passies geniet ik van het leven in Hoofddorp.</p>
+        <p>Het avontuur van studeren aan de HBO-ICT in Utrecht heeft mijn kennis aanzienlijk verdiept en mijn nieuwsgierigheid naar de nieuwste technologieën vergroot. Naast mijn academische inzet en mijn liefde voor alles wat met IT te maken heeft, vind ik vreugde en ontspanning in het leven in Hoofddorp. De dynamiek van deze stad, gecombineerd met mijn eigen persoonlijke groei, maken mijn tijd hier des te waardevoller en onvergetelijk.</p>
 
         <div id="contact-informatie">
             <p>${this.contactInformatie}</p>
